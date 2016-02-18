@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Youtube link:</strong>
+  <%= @solution.youtube_link %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @solution.comment %>
+</p>
+
+<%= link_to 'Edit', edit_solution_path(@solution) %> |
+<%= link_to 'Back', solutions_path %>
