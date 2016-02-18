@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'flow/donate'
 
+  get 'flow/tabulate'
+
   resources :users
   resources :solutions
   # The priority is based upon order of creation: first created -> highest priority.
