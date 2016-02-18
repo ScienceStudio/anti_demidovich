@@ -3,3 +3,16 @@ ru:
   about: "Этот проект создан с целью помочь студентам понять, как решаются задачи по матанализу в учебнике Демидовича."
   users: "пользователи"
   about_title: "О нас"
+  title: "АнтиДемидович"
+  contact_us: "свяжитесь с нами"
+  solutions: "решения"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "email не может быть пустым"
+              taken: "название уже занято"
+            password:
+              blank: "пароль не может быть пустым"

@@ -7,8 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<!-- Start of first page: #one -->
+	<div data-role="page" id="one">
+		<div data-role="header">
+			<a href="/" data-icon="home">&nbsp;</a>
 
-<%= yield %>
-
+			<h1><%= I18n.t(:title).mb_chars.capitalize%></h1>
+			<a href="#popup" data-rel="dialog" data-transition="pop" data-icon="phone">&nbsp;</a>
+		</div>
+		<%= link_to I18n.t(:users).mb_chars.capitalize, users_path, :class=>"ui-btn ui-shadow ui-corner-all"%>
+		<%= link_to I18n.t(:solutions).mb_chars.capitalize, solutions_path, :class=>"ui-btn ui-shadow ui-corner-all"%>
+		<%= yield %>
+		<div data-role="footer" data-theme="a">
+			<h4>Copytight <a href="http://skobeltsyn.com">Konstantin Skobeltsyn</a></h4>
+		</div><!-- /footer -->
+	</div><!-- /page one -->
+	<!-- Start of third page: #popup -->
+	<div data-role="page" id="popup">
+		<div data-role="header" data-theme="b">
+			<h1><%= I18n.t(:contact_us).mb_chars.capitalize%></h1>
+			<ol data-role="listview">
+				<li><a href="https://github.com/skobeltsyn">Konstantin&nbsp;Skobeltsyn</a></li>
+			</ol>
+		</div><!-- /header -->
+	</div>
 </body>
 </html>
